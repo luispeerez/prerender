@@ -21,7 +21,7 @@
     "sinon": "^1.17.5"
   },
   "scripts": {
-    "start": "node server.js --PORT 80",
+    "start": "export PORT=80  node server.js",
     "test": "./node_modules/.bin/mocha"
   },
   "bin": {
