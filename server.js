@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 var prerender = require('./lib');
+var WAIT_AFTER_LAST_REQUEST = 4000;
 
 var server = prerender({
     workers: process.env.PRERENDER_NUM_WORKERS,
-    iterations: process.env.PRERENDER_NUM_ITERATIONS
+    iterations: process.env.PRERENDER_NUM_ITERATIONS,
+    waitAfterLastRequest: WAIT_AFTER_LAST_REQUEST
 });
 
 
