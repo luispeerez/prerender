@@ -5,7 +5,8 @@ var WAIT_AFTER_LAST_REQUEST = 20000;
 var server = prerender({
     workers: process.env.PRERENDER_NUM_WORKERS,
     iterations: process.env.PRERENDER_NUM_ITERATIONS,
-    waitAfterLastRequest: WAIT_AFTER_LAST_REQUEST
+    waitAfterLastRequest: WAIT_AFTER_LAST_REQUEST,
+    jsTimeout: WAIT_AFTER_LAST_REQUEST
 });
 
 
